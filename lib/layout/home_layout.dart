@@ -24,7 +24,7 @@ class _HomeLayoutState extends State<HomeLayout> {
   ];
 
   List<String> titles = [
-    'Dashboard',
+    'Hello',
     'Plants',
     'Controls',
     'Report',
