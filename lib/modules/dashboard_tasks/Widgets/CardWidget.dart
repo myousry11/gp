@@ -34,17 +34,20 @@ class CardWidget extends StatelessWidget {
                 color: Colors.black87,
                 size: 35,
               ),
-              Switch(
-                value: buttonData.isSelected,
-                onChanged: (value) {
-                  buttonData.toggleButtonOnPress(buttonData.id);
-                },
-                activeColor: Colors.white,
-                activeTrackColor: Color(0xff134742),
-                inactiveThumbColor: Colors.white,
-                inactiveTrackColor: Color(0xff969696),
-                trackOutlineWidth: MaterialStateProperty.all(0),
-              )
+              Transform.scale(
+                scale: 0.8,
+                child: Switch(
+                  value: buttonData.isSelected,
+                  onChanged: (value) {
+                    buttonData.toggleButtonOnPress(buttonData.id);
+                  },
+                  activeColor: Colors.white,
+                  activeTrackColor: Color(0xff134742),
+                  inactiveThumbColor: Colors.white,
+                  inactiveTrackColor: Color(0xff969696),
+                  trackOutlineWidth: MaterialStateProperty.all(0),
+                ),
+              ),
             ],
           ),
           Text(

@@ -56,6 +56,20 @@ class _DashboardScreenState extends State<DashboardScreen> {
         title: "Security Camera",
         valuePostFix: "",
         valuePerFix: ""),
+    ButtonData(
+        id: 7,
+        icon: Icons.co2,
+        toggleButtonOnPress: onHumidityPressTogglePress,
+        title: "Co2 Sensor",
+        valuePostFix: "",
+        valuePerFix: ""),
+    ButtonData(
+        id: 8,
+        icon: Icons.water,
+        toggleButtonOnPress: onHumidityPressTogglePress,
+        title: "Ph Sensor",
+        valuePostFix: "",
+        valuePerFix: ""),
 
 
   ];
